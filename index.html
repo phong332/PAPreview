@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang chính</title>
+    <style>
+        body {
+            font-family: system-ui, Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f6f8fa;
+        }
+        
+        .container {
+            display: flex;
+            gap: 16px;
+        }
+        
+        button {
+            padding: 12px 18px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: #fff;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #f0f0f0;
+        }
+        
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .desc {
+            font-size: 14px;
+            color: #555;
+            max-width: 320px;
+            text-align: center;
+        }
+        
+        @media (max-width: 680px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn-group">
+            <button id="btn1" title="Mở ArrowEscape_V1_unity">
+         Mở ArrowEscape_V1_unity
+        </button>
+            <div class="desc">V1</div>
+        </div>
+        <!-- <div class="btn-group">
+            <button id="btn2" title="Mở Fluffy-Backpack PA4">
+          Mở Fluffy-Backpack_PA_4_applovin
+        </button>
+            <div class="desc">V4</div>
+        </div> -->
+        <!-- <div class="btn-group">
+        <button id="btn3" title="Mở Tiny17_Vintage">Mở Tiny17_Vintage</button>
+        <div class="desc">Chủ đề cổ điển</div>
+      </div> -->
+    </div>
+    <script>
+        document.getElementById("btn1").addEventListener("click", function() {
+            window.location.href = "ArrowEscape_V1_unity.html";
+        });
+        // document.getElementById("btn2").addEventListener("click", function() {
+        //     window.location.href = "Fluffy-Backpack_PA_4_applovin.html";
+        // });
+        // document.getElementById("btn3").addEventListener("click", function() {
+        //     window.location.href = "Tiny17_Vintage.html";
+        // });
+    </script>
+</body>
+
+</html>
